@@ -26,6 +26,8 @@ jobs:
       - name: Lint with flake8
         run: |
           flake8 --count --statistics --show-source
+      - name: Check types with Mypy
+        run: mypy
       - name: Test with pytest
         run: |
           pytest --doctest-modules --junitxml=junit/test-results-${{ matrix.python-version }}.xml
