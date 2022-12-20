@@ -1,2 +1,2 @@
 def test_health_check():
-    assert 1 == 1
+    assert 1 == 0
