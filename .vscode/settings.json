@@ -2,5 +2,10 @@
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
     "python.analysis.typeCheckingMode": "strict",
-    "python.linting.mypyEnabled": true
+    "python.linting.mypyEnabled": true,
+    "files.exclude": {
+        ".mypy_cache": true,
+        ".pytest_cache": true,
+        "**/__pycache__": true
+    }
 }
